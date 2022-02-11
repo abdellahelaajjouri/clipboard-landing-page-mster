@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    
+--Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
+/* all */
+.main-container{
+    padding: 0 30px;
+}
+article{
+    padding-top: 5em;
+    text-align: center;
+    padding-bottom: 1.8em;
+}
+h1{
+    font-size:1.5em;
+    color: var(--Dark-Grayish-Blue);
+    padding-top: 0.5em;
+}
+article h1 ,
+article p, 
+article h4{
+    padding-bottom: 0.9em;
+    padding-bottom: 0.9em;
+}
+p{
+    font-size: 0.9em;
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+}
+h4{
+    font-size: 1.2em;
+    color: var(--Dark-Grayish-Blue);
+    
+}
+.btn-ios{
+    width: 80%;
+    height: 6vh;
+    border-radius: 20px;
+    color: white;
+    background-color: var(--Strong-Cyan);
+    margin-bottom: 1em;
+    border: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 0.9em;
+}
+.btn-mac{
+    width: 80%;
+    height: 6vh;
+    margin-bottom: 1em;
+    border-radius: 20px;
+    color: white;
+    background-color: var(--Light-Blue);
+    border: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 0.9em;
+}
+/* header */
+.main-header{
+    height: 40vh;
+    background-image: url(/images/bg-header-mobile.png);
+    display: flex;
+    justify-content: center;
+}
+.main-header img{
+    margin-top:6rem ;
+}
+/* article 1 */
+.article1{
+    padding-top: 0;
+}
+/* article 2 */
+.article2-content div{
+    padding-top: 1.2em;
+}
+.article2-content .img{
+    padding: 1em;
+}
+/* article 4 */
+.article4 {
+    padding: 0.5em;
+}
+/* article 5 */
+.article5{
+    padding-top: 1em;
+}
+/* article 6 */
+.article6 section{
+    padding-bottom: 3em;
+}
+.article6 section .img{
+    padding: 0.9em;
+}
+/* artcile 7 */
+.article7 .img img{
+    width: 7em;
+    padding: 1em;
+}
+/* footer */
+
+footer .logo{
+    display: flex;
+    justify-content: center;
+    padding: 0.8em;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+li{
+    list-style: none;
+    text-align: center;
+    padding: 0.5em;
+}
+a{
+    text-decoration: none;
+    color: var(--Dark-Grayish-Blue);
+    font-size: 0.8em;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;  
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+.icons img{
+    width: 15px;
+    height: 15px;
+}
+@media only screen and (min-width: 992px){
+    .main-container{
+        padding: 0;
+    }
+    /* all */
+    .main-header{
+        background-image: url(/images/bg-header-desktop.png);
+        background-size: cover;
+    }
+    .btn-ios{
+        margin-top: 1em;
+        width: 30%;
+        height: 6vh;
+    }
+    .btn-mac{
+        margin-top: 1em;
+        width: 30%;
+        height: 6vh;
+    }
+    /* article */
+    .article1,
+    .article2-header,
+    .article3,
+    .article8{
+        margin: auto;
+        width: 50%;
+    }
+    
+    .article1 h1{
+        font-size: 2em;
+    }
+    /* article 2 */
+    .article2-content{
+        display: flex;
+    }
+    .article2-content .img img{
+        width: 500px;
+    }
+    .div-r{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .div-r div{
+        text-align: start;
+        width: 60%;
+        padding-left: 10em;
+    }
+    /* article 6 */
+    .article6{
+        padding: 0 4em;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    .article6 section{
+        width: 25%;
+    }
+    /* article 7 */
+    .article7{
+        display: flex;
+        padding: 0 7em;
+        justify-content: space-between;
+    }
+    /* footer */
+    footer{
+        margin-top: 5em;
+        display: flex;
+        height: 14vh;
+        background-color: #f5f3f2;
+        overflow: hidden;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .Links{
+        flex-basis: 40%;
+        height: 8vh;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .icons{
+        flex-basis: 10%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    
+}
